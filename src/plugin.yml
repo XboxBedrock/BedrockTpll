@@ -1,0 +1,19 @@
+#name, main, version and api are required
+name: bedrocktpll
+main: com.xboxbedrock.bedrocktpll.Main
+#remember version and api is string, don't write it like this: 1.0.0, or there will be an exception
+version: "1.0.0"
+api: "1.0.11"
+
+load: POSTWORLD
+author: XboxBedrock
+description: "A bedrock tpll plugin ported from Elgamer's java version"
+commands:
+    Tpll:
+        description: Teleport lat long
+        usage: "/tpll lat long"
+        permission: bedrocktpll.command.tpll
+permissions:
+    bedrocktpll.command.tpll:
+        description: "Allows the user to run the tpll command"
+        default: true
